@@ -88,4 +88,4 @@ for i, frm in enumerate(frames):
 print('\nsaving git.gif')
 frames[-1].save('..' + os.sep + 'gitgif' + os.sep + 'git' + '_' + str(frame_duration_ms) + '_' + str(n_loops) + '_' +
                 str(scaling_factor) + '.gif', format='GIF', append_images=frames[-2:0:-1],
-                save_all=True, duration=frame_duration_ms, disposal=2, optimize=True, loops=n_loops)
+                save_all=True, duration=frame_duration_ms, disposal=2, optimize=True, loop=n_loops)
